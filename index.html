@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopout JAM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Shopout JAM</h1>
+    
+    <!-- Filters -->
+    <div>
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" placeholder="Brand">
+    </div>
+
+    <div>
+        <label for="retailer">Retailer:</label>
+        <input type="text" id="retailer" placeholder="Retailer">
+    </div>
+
+    <div>
+        <label for="cpu">CPU:</label>
+        <input type="text" id="cpu" placeholder="CPU">
+    </div>
+
+    <button id="startScraping">Start Scraping</button>
+
+    <!-- Table for displaying laptop details -->
+    <table id="laptopTable">
+        <thead>
+            <tr>
+                <th>Brand</th>
+                <th>Model</th>
+                <th>CPU</th>
+                <th>CPU Family</th>
+                <th>Aspect Ratio</th>
+                <th>RAM</th>
+                <th>Storage</th>
+                <th>GPU</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Laptop data will be inserted here -->
+        </tbody>
+    </table>
+
+    <button id="exportExcel">Export to Excel</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
